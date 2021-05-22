@@ -22,6 +22,7 @@ object SparkApp {
     df_1.printSchema()
     df_1.createOrReplaceTempView(viewName = "orders")
     ss.sql(sqlText = "SELECT * FROM orders WHERE city = 'NEWTON' ").show()
+    ss.sql(sqlText = "SELECT * FROM orders WHERE city = 'NEWTON' ").explain()
 
   }
 
