@@ -16,7 +16,7 @@ object SparkApp {
       .option("inferSchema", "true")
       .option("delimiter",";")
       .option("header","true")
-      .csv(path = "C:\\Users\\akone\\IdeaProjects\\MonPremierProjet\\orders.csv")
+      .csv(path = "C:\\Users\\akone\\IdeaProjects\\Spark Hadoop Scala\\orders.csv")
 
     df_1.show(numRows = 10)
     df_1.printSchema()
